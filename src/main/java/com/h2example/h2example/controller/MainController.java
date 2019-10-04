@@ -20,7 +20,7 @@ public class MainController {
 		Iterable<Person> all = personDAO.findAll();
 		
 		StringBuilder sb = new StringBuilder();
-		all.forEach(p -> sb.append("Full Name : "+p.getFullName()+"  DOB : "+ p.getDateOfBirth() + "<br>"));
+		all.forEach(person -> sb.append("Full Name : "+person.getFullName()+"  DOB : "+ person.getDateOfBirth() + "<br>"));
 		
 		return sb.toString();
 		}
